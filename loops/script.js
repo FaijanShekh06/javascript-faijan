@@ -33,3 +33,8 @@ do {
   console.log(i);
   i++;
 } while (i < 5);
+// let input = "";
+
+// while (input !== "yes" && input !== "no") {
+//   input = prompt("Please enter 'yes' or 'no':");
+// }
