@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let age = prompt("Enter Age");
+      if (age < 0) {
+        console.error("negative no not alowed");
+      } else if (age >= 18) {
+        alert("You can Drive");
+      } else {
+        alert("You can't Drive");
+      }
+      let conf = confirm('Want to see prompt again \n prompt("Enter Age")');
+
+      if (conf < 0) {
+        console.error("negative no not alowed");
+      } else if (conf >= 18) {
+        alert("You can Drive");
+      } else {
+        alert("You can't Drive");
+      }
+    </script>
+  </body>
+</html>
