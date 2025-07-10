@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+nav {
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navpart1 {
+  display: flex;
+  padding: 0px 20px;
+  cursor: pointer;
+}
+.navpart1 h4 {
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid black;
+  padding: 0px 10px;
+  font-weight: 500;
+  border-radius: 50px;
+}
+.navpart1 i {
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid black;
+  padding: 0px 5px;
+  border-radius: 50px;
+}
+
+.navpart2 {
+  display: flex;
+  gap: 5px;
+}
+.navpart2 h3 {
+  text-transform: uppercase;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+}
+.navpart2 svg {
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  border: 1.5px solid rgba(0, 0, 0, 0.553);
+  border-radius: 50px;
+}
+
+.navpart3 {
+  display: flex;
+  padding: 0px 20px;
+  gap: 5px;
+}
+.btn1 {
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 50px;
+  background-color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+.btn2 {
+  cursor: pointer;
+  border: 1.5px solid black;
+  padding: 6px;
+  border-radius: 50px;
+  color: white;
+  background-color: orangered;
+  font-weight: 500;
+}
+.main > h3 {
+  width: 100%;
+  font-size: 140px;
+  font-weight: 100;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+img {
+  position: absolute;
+  height: 360px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  top: 30%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.img1 {
+  
+  transform: rotate(10deg);
+}
+.img2 {
+  transform: rotate(20deg);
+}
+.img3 {
+  transform: rotate(30deg);
+}
+.img4 {
+  transform: rotate(40deg);
+}
