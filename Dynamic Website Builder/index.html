@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card</title>
+    <style>
+      .card {
+        width: 60%;
+        display: flex;
+        background-color: black;
+        align-items: center;
+        padding: 10px 10px;
+        margin: 10px auto;
+        color: white;
+        border-radius: 20px;
+      }
+      .image {
+        position: relative;
+      }
+      .image img {
+        border-radius: 20px;
+      }
+      .capsule {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-color: black;
+        opacity: 0.5;
+        color: white;
+        padding: 3px;
+        margin: 5px;
+        border-radius: 5px;
+      }
+      .text {
+        padding: 0 5px;
+      }
+      .text h1 {
+        font-size: large;
+        padding-top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="image">
+          <img src="image.png" alt="" />
+          <div class="capsule">28.34</div>
+        </div>
+        <div class="text">
+          <h1>
+            JavaScript Exercise 13 - Solution & Shoutouts | Sigma Web
+            Development Course - Tutorial #77
+          </h1>
+          <p>CodeWithHarry . 5.2M views . 1 year ago</p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
