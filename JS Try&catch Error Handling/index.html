@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = prompt("Enter First Number :");
+      let b = prompt("Enter Second Number :");
+      if (isNaN(a) || isNaN(b)) {
+        throw new Error("Not Valid Input");
+      }
+      let sum = parseInt(a) + parseInt(b);
+
+      try {
+        console.log(`Sum of ${a} + ${b} is : ${sum}*${x}`);
+      } catch (error) {
+        console.log(`Error Aaa Gya bhai`);
+      } finally {
+        console.log(`Finally block Always Executed`);
+      }
+    </script>
+  </body>
+</html>
