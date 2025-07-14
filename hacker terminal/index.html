@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hacking Simulator</title>
+    <style>
+      body {
+        background-color: #000;
+        color: #00ff00;
+        font-family: monospace;
+        padding: 20px;
+        font-size: 1.2rem;
+      }
+
+      .terminal-line {
+        margin: 5px 0;
+      }
+
+      .dots::after {
+        content: "";
+        display: inline-block;
+        animation: blinkDots 1s infinite steps(1);
+      }
+
+      @keyframes blinkDots {
+        0% {
+          content: "";
+        }
+        25% {
+          content: ".";
+        }
+        50% {
+          content: "..";
+        }
+        75% {
+          content: "...";
+        }
+        100% {
+          content: "";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="terminal"></div>
+
+    <script>
+      const messages = [
+        "Initializing Hacking",
+        "Reading your Files",
+        "Password files Detected",
+        "Sending all passwords and personal files to server",
+        "Cleaning up",
+      ];
+
+      const terminal = document.getElementById("terminal");
+
+      function delay(ms) {
+        return new Promise((resolve) => setTimeout(resolve, ms));
+      }
+
+      async function showMessages() {
+        for (const msg of messages) {
+          const line = document.createElement("div");
+          line.classList.add("terminal-line", "dots");
+          line.textContent = msg;
+          terminal.appendChild(line);
+
+          const delayTime = Math.floor(Math.random() * 7000) + 1000; // 1 to 7 seconds
+          await delay(delayTime);
+
+          line.classList.remove("dots");
+        }
+      }
+
+      showMessages();
+    </script>
+  </body>
+</html>
