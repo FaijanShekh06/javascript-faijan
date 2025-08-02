@@ -16,7 +16,7 @@ const p22 = new Promise((resolve, reject) => {
   //promise.all() in failure scenario
   setTimeout(() => {
     reject("p22 Failure");
-  }, 1000);
+  }, 1000);   
 });
 
 const p32 = new Promise((resolve, reject) => {
