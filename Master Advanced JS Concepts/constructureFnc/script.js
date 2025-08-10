@@ -1,4 +1,5 @@
 //constructure funcs
+//!a function whenever invoked with new keyword,return an object,if we use This keyword inside that function,it returns an object of the properties and methods mentioned inside a that functionis called constructure fnc
 //normal fnc jismein this ka use ho and app fnc ko call karte waqt new keyword na use karein
 //jab apke pass aisa koi asa moka ho ke apko ek jaisi properties wale bahut sare elemnts banane hai us waqt app constructure fnc ka use karte ho
 
