@@ -14,5 +14,5 @@ function abcd(a, b) {
   aa = 24
   return (a * b);
 }
-let ans3 = abcd(1, 2)//output 2
-let ans4 = abcd(1, 2)//output 2
+let ans3 = abcd(1, 3)//output 2
+let ans4 = abcd(1, 3)//output 2
